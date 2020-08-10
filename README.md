@@ -1,3 +1,19 @@
+# This fork
+
+Changelist:
+* Added src/terminal-parser.coffee to allow processing models from a folder without a browser.
+* Removed jquery from the analyzer.coffee.
+
+How to use:
+
+```
+mv *.prototxt <root>/models/
+cd <root>/src
+coffee analyzer.coffee
+```
+
+It will output the cumulative macc, comp, add, div and exp that are shown in the web interface.
+
 # Netscope CNN Analyzer
 
 available here: http://dgschwend.github.io/netscope 
