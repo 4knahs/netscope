@@ -482,7 +482,8 @@ module.exports =
 
             # add dimensions to node attributes so they show in graph tooltips
             trivial_layers = ["softmax", "softmaxwithloss", "softmax_loss", "dropout", "concat", "accuracy"]
-            if not ($.inArray(layertype, trivial_layers) >= 0)
+            #if not ($.inArray(layertype, trivial_layers) >= 0)
+            if not (trivial_layers.includes(layertype))
                 summary = {
                     in: "#{d.chIn}ch ⋅ #{d.wIn}×#{d.hIn} (×#{d.batchIn})",
                     out: "#{d.chOut}ch ⋅ #{d.wOut}×#{d.hOut} (×#{d.batchOut})" }
