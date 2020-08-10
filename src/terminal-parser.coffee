@@ -11,7 +11,7 @@ glob = require('glob')
 path = require('path')
 fs = require('fs');
 
-files = glob.sync('/home/aknahs/Development/gaugeNN/data/apps/caffe/**/*.prototxt')
+files = glob.sync('../models/**/*.prototxt')
 
 files.forEach (file) -> 
     
